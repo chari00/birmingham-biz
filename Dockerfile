@@ -19,7 +19,7 @@ RUN npm run export  # if you are using static export
 # Stage 2: Serve with NGINX
 FROM nginx:alpine
 
-MAINTAINER mcc <chari.c.media@gmail.com>
+LABEL maintainer="mcc <chari.c.media@gmail.com>"
 
 # Copy the build output from the builder stage
 COPY --from=builder /app/.next /birmingham-biz
