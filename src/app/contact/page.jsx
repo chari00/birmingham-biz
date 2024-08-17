@@ -62,7 +62,7 @@ export default function ContactPage() {
     }
 
     emailjs
-      .sendForm("service_0dsfnbb", "contact_form", form.current, {
+      .sendForm("service_wmnv0ue", "contact_form", form.current, {
         publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
       })
       .then(
